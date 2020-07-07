@@ -5,35 +5,21 @@
 
 body {
     font-family: sans-serif;
-    display: flex;
     justify-content: center;
-}
 
-.container {
-    width: 1077px;
-    min-height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-top: 50px;
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     background: white;
-    border-width: 2px;
-    border-color: black;
-    border-style: none none solid;
 }
 
 .header-menu {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 50px;
+    height: 100px;
 }
 
 p {
@@ -114,9 +100,11 @@ h4 {
 }
 
 .tile {
-    display: inline-block;
+    margin: 20px;
     text-align: center;
-    width: 359px;
+    background-color: white;
+    border-radius: 10px;
+    min-height: 480px;
 }
 
 .map {
@@ -127,22 +115,62 @@ h4 {
 
 .footer {
     text-align: center;
+    background-color: #316099;
 }
 
 .footer h3 {
-    width: 340px;
-    margin: auto auto auto 0;
+    color: white;
 }
 
 
 .footer p {
-    width: 495px;
-    margin: auto;
+    color: white;
 }
 
 
 .footer ul {
     display: flex;
     justify-content: space-around;
+    color: white;
 }
 
+.background-gradient {
+    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+
+.background-fill {
+    background: #EBF3FB;
+}
+
+.page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.line {
+    display: flex;
+    width: 940px;
+    margin: auto;
+}
+
+.contact-us {
+    background: url(./images/contact-up.svg);
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.contact-us p{
+    color: white;
+}
+
+hr {
+    opacity: 0.4;
+    border: 1px solid #FFFFFF;
+}

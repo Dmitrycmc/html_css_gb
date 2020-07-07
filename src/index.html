@@ -6,24 +6,29 @@
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <title>Lesson 1</title>
+        <title>Main page</title>
     </head>
     <body>
-        <div class="container">
-            <header class="header">
-                <ul class="header-menu list-style-none">
-                    <li><a href="./index.html">Главная</a></li>
-                    <li><a href="./contacts.html">Контакты</a></li>
-                </ul>
-            </header>
+        <header class="header">
+            <ul class="header-menu list-style-none">
+                <li><a href="./index.html"><img src="./images/main-page-icon.svg" alt=""></a></li>
+                <li><a href="./contacts.html"><img src="./images/contacts-icon.svg" alt=""></a></li>
+            </ul>
+        </header>
 
-            <div class="title">
-                <h1>Title h1</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="page background-gradient">
+            <div class="line">
+                <div class="title">
+                    <h1>Title h1</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <img src="./images/img.svg" alt="">
             </div>
+        </div>
 
+        <div class="page background-fill">
             <h3>Title h3</h3>
-            <div class="content main-content">
+            <div class="line">
                 <div class="tile">
                     <h4>Title h4</h4>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
@@ -37,24 +42,30 @@
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
                 </div>
             </div>
+        </div>
 
+        <div class="page background-fill">
             <h3>Title h3</h3>
             <p>Duis aute irure dolor in reprehenderit.</p>
+        </div>
+
+        <footer class="footer">
+            <div class="line" style="height: 100px">
+                <div >
+                    <h3>Contacts</h3>
+                    <p>Designed & coded by</p>
+                </div>
+            </div>
 
             <hr>
 
-            <footer class="footer">
-                <h3>Contacts</h3>
-                <p>Designed & coded by</p>
+            <ul class="list-style-none" style="height: 80px">
+                <li><a href="https://dmitrycmc.github.io/">Лытов Дмитрий</a></li>
+                <li><a href="tel:+7(000)000-00-00">+7(000)000-00-00</a></li>
+                <li><a href="mailto:dmitrycmc@gmail.com">dmitrycmc@gmail.com</a></li>
+            </ul>
 
-                <ul class="list-style-none">
-                    <li><a href="https://dmitrycmc.github.io/">Лытов Дмитрий</a></li>
-                    <li><a href="tel:+7(000)000-00-00">+7(000)000-00-00</a></li>
-                    <li><a href="mailto:dmitrycmc@gmail.com">dmitrycmc@gmail.com</a></li>
-                </ul>
-
-                <p>© All rights reserved</p>
-            </footer>
-        </div>
+            <p>© All rights reserved</p>
+        </footer>
     </body>
 </html>
