@@ -48,3 +48,29 @@ h4 {
     color: #FFFFFF;
     text-transform: uppercase;
 }
+
+.list-style-none {
+    list-style-type:none;
+}
+
+.title {
+    text-align: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.tile {
+    display: inline-block;
+    text-align: center;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
