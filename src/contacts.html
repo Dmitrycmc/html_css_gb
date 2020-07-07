@@ -9,80 +9,82 @@
         <title>Lesson 1</title>
     </head>
     <body>
-        <header class="header">
-            <ul>
-                <li><a href="./index.html">Главная</a></li>
-                <li><a href="./contacts.html">Контакты</a></li>
-            </ul>
-        </header>
+        <div class="container">
+            <header class="header">
+                <ul class="header-menu list-style-none">
+                    <li><a href="./index.html">Главная</a></li>
+                    <li><a href="./contacts.html">Контакты</a></li>
+                </ul>
+            </header>
 
-        <div class="title">
-            <h2 class="contacts">Contact me</h2>
-            <p>Lorem ipsum</p>
-            <img src="./img.jpg" width="300px" alt="random image">
-        </div>
+            <div class="title">
+                <h2 class="contacts">Contact me</h2>
+                <p>Lorem ipsum</p>
+                <img src="./img.jpg" width="300px" alt="random image">
+            </div>
 
-        <div class="content">
-            <div class="contacts">
-                <h4>Address</h4>
-                <p>Consectetur adipiscing</p>
+            <div class="content contacts-content">
+                <div class="contacts">
+                    <h4>Address</h4>
+                    <p>Consectetur adipiscing</p>
 
-                <h4>Phone</h4>
-                <ol>
+                    <h4>Phone</h4>
+                    <ol>
+                        <li><a href="tel:+7(000)000-00-00">+7(000)000-00-00</a></li>
+                        <li><a href="tel:2-00-00-00">2-00-00-00</a></li>
+                    </ol>
+
+                    <h4>Online service</h4>
+                    <ol>
+                        <li><a href="https://dmitrycmc.github.io/">Resume</a></li>
+                        <li><a href="https://github.com/Dmitrycmc">Github</a></li>
+                        <li><a href="mailto:dmitrycmc@gmail.com">dmitrycmc@gmail.com</a></li>
+                    </ol>
+                </div>
+
+                <div class="form">
+                    <h4>Send us message</h4>
+                    <form action="">
+                        <div>
+                            <label>Full name:
+                                <input type="text" class="input" />
+                            </label>
+                        </div>
+                        <div>
+                            <label>Email:
+                                <input type="email" class="input" />
+                            </label>
+                        </div>
+                        <div>
+                            <label>Message:
+                                <textarea class="input"></textarea>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="submit" class="submitButton" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab757b7714c41187d2d0d1124def8855ba61f8ab46d8dd0cce642ff596d2a59df&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+            </div>
+
+            <hr>
+
+            <footer class="footer">
+                <h3>Contacts</h3>
+                <p>Designed & coded by</p>
+
+                <ul class="list-style-none">
+                    <li><a href="https://dmitrycmc.github.io/">Лытов Дмитрий</a></li>
                     <li><a href="tel:+7(000)000-00-00">+7(000)000-00-00</a></li>
-                    <li><a href="tel:2-00-00-00">2-00-00-00</a></li>
-                </ol>
-
-                <h4>Online service</h4>
-                <ol>
-                    <li><a href="https://dmitrycmc.github.io/">Resume</a></li>
-                    <li><a href="https://github.com/Dmitrycmc">Github</a></li>
                     <li><a href="mailto:dmitrycmc@gmail.com">dmitrycmc@gmail.com</a></li>
-                </ol>
-            </div>
+                </ul>
 
-            <div class="form">
-                <h4>Send us message</h4>
-                <form action="">
-                    <div>
-                        <label>Full name:
-                            <input type="text" class="input" />
-                        </label>
-                    </div>
-                    <div>
-                        <label>Email:
-                            <input type="email" class="input" />
-                        </label>
-                    </div>
-                    <div>
-                        <label>Message:
-                            <textarea class="input"></textarea>
-                        </label>
-                    </div>
-                    <div>
-                        <input type="submit" class="submitButton" />
-                    </div>
-                </form>
-            </div>
+                <p>© All rights reserved</p>
+            </footer>
         </div>
-
-        <div class="map">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab757b7714c41187d2d0d1124def8855ba61f8ab46d8dd0cce642ff596d2a59df&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
-        </div>
-
-        <hr>
-
-        <footer class="footer">
-            <h3>Contacts</h3>
-            <p>Designed & coded by</p>
-
-            <ul class="list-style-none">
-                <li><a href="https://dmitrycmc.github.io/">Лытов Дмитрий</a></li>
-                <li><a href="tel:+7(000)000-00-00">+7(000)000-00-00</a></li>
-                <li><a href="mailto:dmitrycmc@gmail.com">dmitrycmc@gmail.com</a></li>
-            </ul>
-
-            <p>© All rights reserved</p>
-        </footer>
     </body>
 </html>
