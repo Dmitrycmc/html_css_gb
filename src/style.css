@@ -1,6 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    color: #1F3F68;
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-weight: 300;
 }
 
 body {
@@ -22,6 +26,15 @@ body {
     height: 100px;
 }
 
+.button {
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    color: white;
+    padding: 15px 50px;
+    border: none;
+}
+
 p {
     font-size: 16px;
     line-height: 26px;
@@ -30,23 +43,23 @@ p {
 
 h1 {
     font-size: 64px;
-    color: #1F3F68;
-    width: 510px;
-    margin: auto;
+    line-height: 74px;
 }
 
 h1 + p {
     width: 425px;
-    margin: auto;
+    margin: auto 0;
 }
 
 h2 {
+    color: #1F3F68;
     font-weight: 500;
     font-size: 44px;
     text-align: center;
 }
 
 h3 {
+    color: #1F3F68;
     font-size: 36px;
     text-align: center;
 }
@@ -55,6 +68,15 @@ h4 {
     font-size: 20px;
     line-height: 30px;
     color: #1F3F68;
+    font-weight: bold;
+}
+
+.contacts a, .contacts a:visited {
+    color: #1F3F68;
+}
+
+a, a:visited {
+    color: white;
 }
 
 .input {
@@ -64,24 +86,8 @@ h4 {
     opacity: 0.4;
 }
 
-.submitButton {
-    background: #5A98D0;
-    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    color: #FFFFFF;
-    text-transform: uppercase;
-}
-
 .list-style-none {
     list-style-type: none;
-}
-
-.title {
-    text-align: center;
 }
 
 .content {
@@ -95,16 +101,37 @@ h4 {
     grid-template-columns: repeat(2, 1fr);
 }
 
+.contacts {
+    color: white;
+}
+
 .main-content {
     grid-template-columns: repeat(3, 1fr);
 }
 
 .tile {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
     margin: 20px;
     text-align: center;
     background-color: white;
-    border-radius: 10px;
     min-height: 480px;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+form.tile {
+    display: grid;
+    grid-template-rows: repeat(5, min-content);
+    grid-gap: 25px;
+}
+
+label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .map {
@@ -116,6 +143,11 @@ h4 {
 .footer {
     text-align: center;
     background-color: #316099;
+}
+
+.footer-block {
+    width: 80vw;
+    margin: 50px auto;
 }
 
 .footer h3 {
@@ -130,7 +162,7 @@ h4 {
 
 .footer ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     color: white;
 }
 
@@ -138,22 +170,42 @@ h4 {
     background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
 
-.background-fill {
-    background: #EBF3FB;
-}
-
 .page {
     height: 100vh;
     display: flex;
+    margin: 50px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+.title-page {
+    height: calc(100vh - 100px);
+    margin: 0;
+}
+
+.title-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
 .line {
     display: flex;
-    width: 940px;
     margin: auto;
+}
+
+.footer-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.images-container {
+    display: grid;
+    grid-template-rows: 250px 250px;
+    grid-template-columns: 300px 300px;
+    grid-gap: 10px;
 }
 
 .contact-us {
@@ -163,7 +215,6 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
 }
 
 .contact-us p{
